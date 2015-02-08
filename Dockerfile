@@ -9,7 +9,7 @@ RUN tar xf /tmp/influxdb.tar
 RUN cp /build/influxdb /usr/bin
 RUN mkdir /etc/influxdb
 RUN cp /build/config.toml /etc/influxdb
-RUN rm -rf /build
+RUN rm -rf /build /tmp/influxdb.*
 
 RUN opkg-install zlib libbz2
 RUN ln -s /usr/lib/libbz2.so.1.0 /usr/lib/libbz2.so.1
