@@ -7,4 +7,4 @@ RUN chmod 755 /usr/bin/influxd
 EXPOSE 8083 8086
 
 ENTRYPOINT ["/usr/bin/influxd"]
-CMD ["-config=/data/influx.config"]
+CMD ["-config=/data/influx.conf"]
