@@ -3,8 +3,8 @@ influxdb-docker
 
 This container requires a data directory mount on `/data`,
 
-    mkdir -p ~/data/log ~/data/db ~/data/raft
-    cp config.toml ~/data
+    mkdir -p ~/data
+    cp influx.conf ~/data
     docker run --name influxdb -p 8083:8083 -p 8086:8086 -v ~/data:/data skalera/influxdb
 
 ## Verification
